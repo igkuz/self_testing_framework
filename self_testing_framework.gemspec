@@ -12,6 +12,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{This gem provides a self testing framework written for training. Useful for studing cases.}
   gem.homepage      = ""
 
+  gem.add_runtime_dependency "active_support"
+
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
