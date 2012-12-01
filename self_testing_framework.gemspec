@@ -6,8 +6,8 @@ require 'self_testing_framework/version'
 Gem::Specification.new do |gem|
   gem.name          = "self_testing_framework"
   gem.version       = SelfTestingFramework::VERSION
-  gem.authors       = ["Igor Kuznetsov"]
-  gem.email         = ["igkuznetsov@gmail.com"]
+  gem.authors       = ["Igor Kuznetsov", "Mikhail Stolbov"]
+  gem.email         = ["igkuznetsov@gmail.com", "mstolbov@gmail.com"]
   gem.description   = %q{This gem provides a self testing framework}
   gem.summary       = %q{This gem provides a self testing framework written for training. Useful for studing cases.}
   gem.homepage      = ""

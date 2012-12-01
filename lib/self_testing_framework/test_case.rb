@@ -16,8 +16,9 @@ module SelfTestingFramework
     def after
     end
 
-    def assert(arg)
-      raise "AssertFalse" if arg == true
+    def assert(arg, fail_message = nil)
+      fail_message ||= "Assertion Fails"
+      raise AssertFalse.new(fail_message) unless arg
     end
 
   end

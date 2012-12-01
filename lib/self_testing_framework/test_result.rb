@@ -19,9 +19,13 @@ module SelfTestingFramework
 
     def errored(klass_name, test_name, error)
       @errors_count += 1
-      @tests << {:class_name => klass_name, :test_name => test_name}
+      @tests << {:class_name => klass_name, :test_name => test_name, :error => error}
       @errors << {:class_name => klass_name, :test_name => test_name, :error => error}
       @total_count += 1
+    end
+
+    def last_test
+      @tests.last
     end
 
   end
